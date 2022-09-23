@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterFietsenmaker">
+
+    <EditText
+        android:id="@+id/txtTelnrFietsenmaker"
+        android:layout_width="237dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="40dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/txtTelnrFietsenmaker"
+        android:inputType="phone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAdresWinkel" />
+
+    <TextView
+        android:id="@+id/txtRegistrerenFietsenmaker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/txtRegistrerenFietsenmaker"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.37"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtNaamWinkel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:autofillHints=""
+        android:hint="@string/txtNaamWinkel"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAchternaamFietsenmaker" />
+
+    <EditText
+        android:id="@+id/txtVoornaamFietsenmaker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="88dp"
+        android:autofillHints=""
+        android:hint="@string/txtVoornaamFietsenmaker"
+        android:inputType="textPersonName"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/txtAchternaamFietsenmaker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:autofillHints=""
+        android:hint="@string/txtAchternaamFietsenmaker"
+        android:inputType="textPersonName"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVoornaamFietsenmaker"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/txtEmailFietsenmaker"
+        android:layout_width="109dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/txtEmailFietsenmaker"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNaamWinkel" />
+
+    <EditText
+        android:id="@+id/txtAdresWinkel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/txtAdresWinkel"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmailFietsenmaker" />
+
+    <EditText
+        android:id="@+id/txtPasswordFietsenmaker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="4dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/txtPasswordFietsenmaker"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTelnrFietsenmaker" />
+
+    <TextView
+        android:id="@+id/txtSpecialiteiten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/txtSpecialiteiten"
+        android:textColor="#121212"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPasswordFietsenmaker" />
+
+    <CheckBox
+        android:id="@+id/cbHerenfietsen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/cbHerenfietsen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSpecialiteiten" />
+
+    <CheckBox
+        android:id="@+id/cbKoersfietsen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:text="@string/cbKoersfietsen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbDamesfietsen" />
+
+    <CheckBox
+        android:id="@+id/cbDamesfietsen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:text="@string/cbDamesfietsen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbHerenfietsen" />
+
+    <CheckBox
+        android:id="@+id/cbElektrischeFietsen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cbElektrischeFietsen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.769"
+        app:layout_constraintStart_toStartOf="@+id/cbHerenfietsen"
+        app:layout_constraintTop_toTopOf="@+id/cbHerenfietsen" />
+
+    <CheckBox
+        android:id="@+id/cbMountainbikes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cbMountainbikes"
+        app:layout_constraintStart_toStartOf="@+id/cbElektrischeFietsen"
+        app:layout_constraintTop_toBottomOf="@+id/cbElektrischeFietsen" />
+
+    <CheckBox
+        android:id="@+id/cbSpeedPedelecs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cbSpeedPedelecs"
+        app:layout_constraintStart_toStartOf="@+id/cbMountainbikes"
+        app:layout_constraintTop_toBottomOf="@+id/cbMountainbikes" />
+
+    <Button
+        android:id="@+id/btnOpslaanFietsenMaker"
+        android:layout_width="214dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="28dp"
+        android:onClick="onBtnOpslaanFietsenmaker_Clicked"
+        android:text="@string/register_save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
